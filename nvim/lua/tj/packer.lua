@@ -49,5 +49,6 @@ return require('packer').startup(function(use)
 
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
+    use 'm4xshen/autoclose.nvim'
 
 end)
