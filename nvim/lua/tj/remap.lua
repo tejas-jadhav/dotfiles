@@ -1,5 +1,7 @@
 vim.g.mapleader = ' '
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- ctrl backspace
+vim.api.nvim_set_keymap('i', '<C-H>', '<C-W>', {noremap = true})
 
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
