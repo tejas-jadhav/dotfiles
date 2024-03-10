@@ -46,9 +46,24 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
-
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
     use 'm4xshen/autoclose.nvim'
 
+    -- splits
+    use('mrjones2014/smart-splits.nvim')
+    use({ 'mrjones2014/smart-splits.nvim', tag = 'v1.0.0' })
+    use({ 'mrjones2014/smart-splits.nvim', run = './kitty/install-kittens.bash' })
+    use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
+
+
+    use {
+        'numToStr/Comment.nvim',
+    }
+
+    use 'nvimtools/none-ls.nvim'
+    use { "catppuccin/nvim", as = "catppuccin" }
 end)

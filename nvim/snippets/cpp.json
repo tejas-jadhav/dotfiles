@@ -1,0 +1,15 @@
+{
+    "foo" : {
+        "prefix": "foo",
+        "body": [
+            "#include<iostream>",
+            "using namespace std;",
+            "",
+            "int main() {",
+                "\tcout << \"Foo Bar\";",
+                "\treturn 0;",
+            "}"
+        ],
+        "description": "Testing snippets"
+    }
+}
